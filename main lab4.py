@@ -19,7 +19,6 @@ class VehicleState(ABC):
     def handle(self, vehicle):
         pass
 
-
 class FreeState(VehicleState):
     def handle(self, vehicle):
         vehicle.state = "Free"
@@ -27,26 +26,6 @@ class FreeState(VehicleState):
 class OnTheWayState(VehicleState):
     def handle(self, vehicle):
         vehicle.state = "Driving"
-
-class BusyState(VehicleState):
-    def handle(self, vehicle):
-        vehicle.state = "Busy"
-
-
-# Strategy
-class IncidentHandlingStrategy(ABC):
-    @abstractmethod
-    def handle_incident(self, vehicles):
-        pass
-
-class FireStrategy(IncidentHandlingStrategy):
-    def handle_incident(self, vehicles):
-        return vehicles[:3]
-
-class OtherStrategy(IncidentHandlingStrategy):
-    def handle_incident(self, vehicles):
-        return vehicles[:2]
-
 
 # Iterator
 class FireStationIterator:
