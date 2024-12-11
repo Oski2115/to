@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+.main-container {
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+header {
+    background-color: #C6C5FF;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 3rem;
+}
+
+.logo-and-text {
+    display: flex;
+    align-items: center;
+}
+
+.logo-and-text h1{
+    font-family: 'Carter One', cursive;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+    line-height: 3.6rem;
+}
+
+.logo-and-text img{
+    width: 25%;
+    width: 10rem;
+}
+
+nav ul {
+    margin-right: 2rem;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    transition: color 0.15s;
+    font-size: 1.6rem;
+}
+
+nav ul li a:hover{
+    color: #EC2529;
+}
+
+.motivation {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 10rem 0 5rem 0;
+}
+
+.motivation-text {
+    max-width: 50%;
+    margin: 3rem 0;
+}
+
+.motivation-text h1 {
+    font-size: 4.5rem;
+    font-family: 'Carter One', cursive;
+}
+
+.motivation-text p {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.motivation-button {
+    background-color: #EC2529;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.motivation img{
+    width: 30rem;
+}
+
+.about-us, .services {
+    text-align: center;
+    padding: 5rem;
+}
+
+.about-us h2{
+    font-size: 2rem;
+}
+
+.about-us p{
+    max-width: 800px;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    margin: 0 auto;
+}
+
+.service-box {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.service {
+    background: #E7E7E7;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 250px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.service i {
+    font-size: 3rem;
+    color: #EC2529;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 0.5rem;
+    background: #C6C5FF;
+    border-radius: 1rem;
+    margin-top: 4rem;
+}
+
+
+@media (max-width: 1038px) {
+    
+    .motivation {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .motivation img{
+        margin: 2rem auto;
+    }
+
+    .motivation-text {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem; 
+    }
+
+    .logo-and-text h1 {
+        font-size: 4rem;
+    }
+
+    .logo-and-text img {
+        width: 50%; 
+        margin: 0 auto;
+    }
+    .motivation img {
+        max-width: 80%;
+    }
+
+    .motivation-button {
+        font-size: 1.5rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .service-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem; 
+    }
+
+    .service {
+        width: 90%;
+        max-width: 300px; 
+    }
+
+
+    nav ul {
+        margin: 1rem;
+    }
+
+    
+    .motivation-text h1 {
+        font-size: 3rem;
+    }
+    
+    .motivation-text p {
+        font-size: 1rem;
+    }
+    
+    .motivation-button {
+        font-size: 1.2rem; 
+        padding: 0.6rem 1rem;
+    }
+    
+    .service {
+        padding: 1rem;
+    }
+    
+    nav ul li a {
+        font-size: 2rem; 
+    }
+}
